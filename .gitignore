@@ -1,0 +1,7 @@
+# Generated data and caches
+data/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/

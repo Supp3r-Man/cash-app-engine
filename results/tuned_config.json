@@ -1,0 +1,40 @@
+{
+ "config": {
+  "weights": {
+   "ref": 4.0,
+   "name": 4.0,
+   "amount": 2.0,
+   "date": 0.25,
+   "history": 0.0
+  },
+  "evidence": {
+   "exact": 1.0,
+   "fx_rounding": 0.95,
+   "rounding": 0.85,
+   "discount": 0.9,
+   "deduction_explained": 0.9,
+   "deduction_reason": 0.75,
+   "deduction_mismatch": 0.6,
+   "short_pay": 0.45,
+   "partial_hint": 0.75,
+   "partial": 0.4,
+   "overpay": 0.5,
+   "overpay_hint": 0.6
+  },
+  "margin_pen": 0.3,
+  "margin_ref": 0.1,
+  "name_floor": 0.45,
+  "top_customers": 3,
+  "unapplied_floor": 0.4,
+  "strong_ref": 0.75,
+  "mitm_pool": 30,
+  "ledger_min": 0.8,
+  "max_set": 6,
+  "round_tol": 100,
+  "fx_tol": 0.015,
+  "dup_days": 10,
+  "dup_override": 0.85,
+  "disable": []
+ },
+ "threshold": 0.7
+}
