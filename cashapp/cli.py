@@ -77,7 +77,8 @@ def cmd_match(args) -> int:
     raw = Engine(ds, cfg).run()
     decs = apply_policy(raw, args.threshold, cfg.margin_ref)
     if args.out:
-        with open(args.out, "w", encoding="utf-8") as fh:
+        with open(args.out, "w", encoding="utf-8", newline="
+") as fh:
             for d in decs:
                 fh.write(json.dumps(d.to_dict()) + "\n")
         print(f"wrote {len(decs)} decisions to {args.out}")

@@ -111,7 +111,8 @@ def tune(tune_ds: Dataset, base: Optional[Config] = None, grid=None, passes: int
     trials: list = []
     cur = objective(tune_ds, cfg)
     trials.append({"stage": "start", "param": None, "value": None, **cur, "config": cfg.to_dict()})
-    log = open(log_path, "w", encoding="utf-8") if log_path else None
+    log = open(log_path, "w", encoding="utf-8", newline="
+") if log_path else None
     try:
         if log:
             log.write(json.dumps(trials[-1]) + "\n")
