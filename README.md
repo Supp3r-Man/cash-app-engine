@@ -80,7 +80,7 @@ Combinations happen: any category can arrive with a payer-name variant, and a fe
 
 ## How the evaluation is kept honest
 
-Borrowed from the sibling project [rag-tuning-lab](https://github.com/Sup3rMar10/rag-tuning-lab).
+Borrowed from the sibling project [rag-tuning-lab](https://github.com/Supp3r-Man/rag-tuning-lab).
 
 - **One split, made once.** Customers are split with a fixed seed into a tuning half and a held-out half. A customer's invoices, history and payments stay on one side. `tune()` is handed the tuning half and nothing else. A test scrambles the held-out ground truth and checks that everything chosen during tuning is unchanged while only the held-out scores move.
 - **The engine never reads ground truth.** A test runs it on a dataset with the truth removed and checks the decisions are identical.
@@ -183,7 +183,7 @@ How to read the by-category table: "proposal correct" is measured before the pol
 Python 3.10 or newer (tested on 3.13). The engine uses only the standard library; the charts need matplotlib and the tests need pytest.
 
 ```bash
-git clone https://github.com/Sup3rMar10/cash-app-engine.git
+git clone https://github.com/Supp3r-Man/cash-app-engine.git
 cd cash-app-engine
 pip install -r requirements.txt
 
