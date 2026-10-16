@@ -177,8 +177,7 @@ class Dataset:
         )
 
     def save(self, path) -> None:
-        with open(path, "w", encoding="utf-8", newline="
-") as fh:
+        with open(path, "w", encoding="utf-8", newline="\n") as fh:
             fh.write(self.to_json())
 
     @staticmethod
